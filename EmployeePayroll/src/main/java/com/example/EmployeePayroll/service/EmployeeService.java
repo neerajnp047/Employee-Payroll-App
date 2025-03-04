@@ -12,7 +12,7 @@ import java.util.Optional;
 public class EmployeeService {
 
     //UC-03 Ability for the Services Layer to store the Employee Payroll Data
-    
+
     private final List<Employee> employeeList = new ArrayList<>();
     private long idCounter = 1; // To simulate auto-incremented IDs
 

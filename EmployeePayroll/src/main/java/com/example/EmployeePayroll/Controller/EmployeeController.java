@@ -3,12 +3,16 @@ package com.example.EmployeePayroll.Controller;
 import com.example.EmployeePayroll.dto.EmployeeDTO;
 import com.example.EmployeePayroll.model.Employee;
 import com.example.EmployeePayroll.service.EmployeeService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/employeepayrollservice")
+
+//UC-07 Using Lombok Library for Logging
+@Slf4j // Enables Logging
 public class EmployeeController {
 
     private final EmployeeService employeeService;
